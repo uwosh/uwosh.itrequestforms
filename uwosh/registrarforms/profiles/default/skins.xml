@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration for the portal_skins tool -->
+
+<object name="portal_skins">
+
+  <object name="uwosh_registrarforms_styles"
+    meta_type="Filesystem Directory View"
+    directory="uwosh.registrarforms:skins/uwosh_registrarforms_styles" />
+
+  <skin-path name="*">
+    <layer name="uwosh_registrarforms_styles" insert-after="custom" />
+  </skin-path>
+
+</object>

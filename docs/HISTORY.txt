@@ -1,0 +1,14 @@
+Changelog
+=========
+
+1.1 - 2010-09-30 T. Kim Nguyen (nguyen@uwosh.edu)
+-------------------------------------------------
+
+* Many fixes as per feedback
+
+
+1.0 - Unreleased
+----------------
+
+* Initial release
+

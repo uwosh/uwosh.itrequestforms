@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="uwosh.registrarforms">
+
+  <!-- configure your content components here -->
+  
+  <!-- -*- extra stuff goes here -*- -->
+  <class class=".queryrequest.QueryRequest">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IQueryRequest"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.IQueryRequest"
+        />
+  </class>
+  <class class=".projectrequest.ProjectRequest">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.IProjectRequest"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.IProjectRequest"
+        />
+  </class>
+  <class class=".softwarerequest.SoftwareRequest">
+    <require
+        permission="zope2.View"
+        interface="..interfaces.ISoftwareRequest"
+        />
+    <require
+        permission="cmf.ModifyPortalContent"
+        set_schema="..interfaces.ISoftwareRequest"
+        />
+  </class>
+
+</configure>
